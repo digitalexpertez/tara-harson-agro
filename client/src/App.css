@@ -1,0 +1,25 @@
+:root {
+  --color-bg: #e7efe9;
+  --color-panel: #faf5ef;
+  --color-surface: #e8f1e9;
+  --color-ink: #12261d;
+  --color-text: #1d2f29;
+  --color-accent: #d5aa4d;
+  --color-accent-hover: #e3b95d;
+  --color-accent-soft: rgb(213 170 77 / 18%);
+  --color-white-rgb: 255 255 255;
+  --color-hero-rgb: 12 55 41;
+  --color-hero-mid-rgb: 17 74 57;
+  --color-border: rgb(16 58 45 / 18%);
+  --color-muted: rgb(19 42 34 / 62%);
+  --color-copy: rgb(19 42 34 / 76%);
+  --color-copy-soft: rgb(19 42 34 / 68%);
+}
+
+.site-shell {
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top, rgb(213 170 77 / 16%), transparent 28%),
+    linear-gradient(180deg, #0f3b2d 0%, #0d3129 100%);
+}
