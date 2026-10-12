@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
 
   server: {
-    allowedHosts: ["hybrid-overture-blurred.ngrok-free.dev"],
+    allowedHosts: [
+      ".trycloudflare.com", // allow all Cloudflare Tunnel subdomains
+      ".ngrok-free.dev", // allow all Ngrok subdomains
+    ],
   },
 });

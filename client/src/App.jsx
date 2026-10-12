@@ -3,10 +3,12 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import Home from "./pages/home.jsx";
+import About from "./pages/about.jsx";
 import Product from "./pages/product.jsx";
+import Services from "./pages/services.jsx";
 import "./App.css";
 
-const sectionPaths = new Set(["/about", "/services", "/contact"]);
+const sectionPaths = new Set(["/contact"]);
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -29,17 +31,14 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<Home targetSection="about" />} />
+            <Route path="/about" element={<About />} />
             <Route path="/products" element={<Product />} />
             <Route path="/products/:categorySlug" element={<Product />} />
             <Route
               path="/products/:categorySlug/:productSlug"
               element={<Product />}
             />
-            <Route
-              path="/services"
-              element={<Home targetSection="services" />}
-            />
+            <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Home targetSection="contact" />} />
           </Routes>
         </main>

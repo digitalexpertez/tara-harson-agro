@@ -60,6 +60,7 @@
 
 .footer-copy {
   max-width: 420px;
+  align-self: center;
   color: rgba(255, 255, 255, 0.9);
   font-size: 17px;
   line-height: 1.5;

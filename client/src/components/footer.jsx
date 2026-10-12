@@ -3,12 +3,13 @@ import logo from "../assets/logo/loog.png";
 
 const footerLinks = [
   { label: "All machinery", href: "/products" },
-  { label: "Our standard", href: "/about" },
+  // { label: "Our standard", href: "/about" },
   { label: "Start an enquiry", href: "/contact" },
 ];
 
 const contactItems = [
   { label: "+91 97587 83063", href: "tel:+919758783063", icon: "☎" },
+  { label: "+91 97191 02062", href: "tel:+919719102062", icon: "☎" },
   {
     label: "taraharsonagro@gmail.com",
     href: "mailto:taraharsonagro@gmail.com",
